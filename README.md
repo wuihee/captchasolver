@@ -14,7 +14,7 @@ The trained model is based off of this [tutorial](https://keras.io/examples/visi
 ## Installation
 
 ```bash
-git clone 
+git clone https://github.com/wuihee/captchasolver.git
 cd captchasolver
 pip install.
 ```
