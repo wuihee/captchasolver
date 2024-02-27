@@ -13,10 +13,16 @@ The trained model is based off of this [tutorial](https://keras.io/examples/visi
 
 ## Installation
 
+### Pip
+
 ```bash
-git clone https://github.com/wuihee/captchasolver.git
-cd captchasolver
-pip install .
+pip install git+https://github.com/wuihee/captchasolver.git
+```
+
+### Poetry
+
+```bash
+poetry add git+https://github.com/wuihee/captchasolver.git
 ```
 
 ## Usage
