@@ -1,0 +1,1 @@
+from .captchasolver import CAPTCHASolver
