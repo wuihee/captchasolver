@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "captchasolver"
+version = "0.1.0"
+description = "Simple CAPTCHA solver utility package."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE.txt" }
+authors = [
+  {name = "wuihee", email = "wuihee@gmail.com" }
+]
+dependencies = [
+    "tensorflow == 2.14.0",
+    "opencv-python"
+]
+
+
+[project.optional-dependencies]
+dev = [
+    "jupyter",
+    "matplotlib",
+]
+test = [
+    "pytest",
+]

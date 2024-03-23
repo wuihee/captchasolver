@@ -11,20 +11,17 @@ class CAPTCHASolver:
     CAPTCHASolver solves simple image CAPTCHAs.
     """
 
-    def __init__(
-        self, model_path="./captchasolver_model", vocabulary=CHARACTERS
-    ) -> None:
+    def __init__(self, model_path: str, vocabulary=CHARACTERS) -> None:
         """
         Initialize CAPTCHASolver.
 
         Args:
-            model_path (str, optional): Path to prediction model. Defaults to
-                                        "./captchasolver_model".
+            model_path (str): Path to prediction model.
             vocabulary (list[str], optional): List of all possible letters in
                                               the CAPTCHA. Defaults to
                                               CHARACTERS.
         """
-        self._model = keras.models.load_model(model_path, compile=False)
+        self._model = keras.models.load_model(model_path)
         self._image_processor = ImageProcessor()
         self._dataset_creator = DatasetCreator()
         self._decoder = CAPTCHADecoder(

@@ -2,7 +2,7 @@ from captchasolver.captchasolver import CAPTCHASolver
 
 from .utils import encoded_image
 
-captchasolver = CAPTCHASolver()
+captchasolver = CAPTCHASolver("./captchasolver_model")
 
 
 def test_captchasolver() -> None:
