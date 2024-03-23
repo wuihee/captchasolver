@@ -19,10 +19,10 @@ The trained model is based off of this [tutorial](https://keras.io/examples/visi
 pip install git+https://github.com/wuihee/captchasolver.git
 ```
 
-### Poetry
+### Add as Dependency
 
 ```bash
-poetry add git+https://github.com/wuihee/captchasolver.git
+captchasolver @ git+https://github.com/wuihee/captchasolver
 ```
 
 ## Usage
